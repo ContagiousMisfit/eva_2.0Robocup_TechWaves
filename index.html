@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+
+    <title>Eva Robocup</title>
+
+    <link href="./css/styles.css" rel="stylesheet" />
+
+    <!--JAVASCRIPTO-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/index.js"></script>
+
+</head>
+
+<body>
+    <!--Início Página 1-->
+    <div class="home" id="home">
+        <nav class="menuHome">
+
+            <img src="./css/assets/imagens/techwavesLogo.png" alt="Logo Techwaves" class="logo">
+            <div><a href="#contact" id="contactNav">contact</a></div>
+            <div><a href="#team">team</a></div>
+            <div><a href="#gallery">gallery</div>
+            <div><a href="#hardware">hardware</a></div>
+            <div><a href="#weapons">weapons</a></div>
+            <div><a href="#about">about</a></div>
+            <div><a href="#home">home</a></div>
+        </nav>
+        <div>
+            <img src="css/assets/imagens/Home.jpg" id="robo" class="homeNormal">
+            <img src="css/assets/imagens/Home-mobile.jpg" id="robo" class="homeMobile">
+        </div>
+    </div>
+    <!--Página 2 Sobre-->
+    <div id="about" class="sobre">
+        <h2>
+            robot type_
+        </h2>
+        <p>
+            Robôs do tipo rover são usados para as mais diversas funções: batalha de robôs, limpeza ou até mesmo viagens espaciais (como o Mars Rover, da NASA). Eva, em especial, foi projetada para destruir todos os seus adversários em uma batalha épica sediada no
+            coliseu. Digo, na arena da FIAP.
+        </p>
+        <h2>
+            robocup_</h2>
+        <p>
+            Desde os primórdios da FIAP, o challenge é proposto para todos os primeiros anos do curso de Sistemas de Informação. Eis o desafio: A montagem desde a primeira letra até o último movimento do robô.
+        </p>
+        <h2>/os meios
+            <br>e os fins/</h2>
+        <p>
+            A principal finalidade da ROBOCUP é integrar todas as disciplinas, fornecendo um panorama geral de toda a grade curricular. O trabalho em equipe prepara os alunos para o mercado de trabalho e torna as atividades lúdicas. Além disso, inspira os jogadores
+            no desenvolvimento de sua criatividade.
+        </p>
+    </div>
+
+    <!--Página 3 WEAPONS-->
+    <div class="weapons " id="weapons">
+        <div class="container-txt threed">
+            <h1>weapon’s system</h1>
+
+            <div class="detalhe">
+
+            </div>
+
+            <div class="tab menu">
+                <button class="tablinks active" onclick="openCity(event, 'Weapon')">WEAPON</button> <b class="setinha">|</b>
+                <button class="tablinks " onclick="openCity(event, 'Concept')">CONCEPT</button>
+            </div>
+
+            <div id="Weapon" class="tabcontent">
+                <p>“A vitória está reservada para aqueles que estão dispostos a pagar o preço”. </p>
+                <p class="bold">- Sun Tzu</p>
+                <p>As armas consistem em duas estacas de bambu, firmadas na base da robô.</p>
+                <p>A ponta da arma é uma rosa feita de E.V.A, cravada em uma bolinha de isopor e com agulhas presas do caule à ponta da pétala.</p>
+            </div>
+
+            <div id="Concept" class="tabcontent disabled">
+                <p>Inspirado no design das lanças de panteões, comumente utilizados por gladiadores (em disputas no coliseu). Nossa arma foi projetada para:
+                    <p class="bold">atacar as áreas de principal vunerabilidade do oponente.</p>
+                </p>
+                <p>Serão duas lanças posicionadas em ângulos estratégicos que visam estourar o balão do oponente com a maior destreza e o mais rápido possível.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <!--FIM da pag 3-->
+
+    <!--Página 4 Componentes-->
+    <div class="componentes" id="hardware">
+        <div class="pt4 hardware">
+            <h2>
+                BASE
+            </h2>
+
+            <p>
+                O corpo humano é um organismo complexo composto de vários sistemas. Os robôs, criados por eles, não poderiam ser diferentes. COMPONENTES BÁSICOS:
+                <p>Arduino (Mega)</p>
+                <p>Protoboard</p>
+                <p>Cabos</p>
+                <p>Protoboard</p>
+                <p>Ponte H</p>
+                <p>Shield (AVR ISP)</p>
+                <p>Circuito Integrado (HC05)</p>
+                <p>Madeira MDF</p>
+            </p>
+        </div>
+        <div class="pt4 hardware base">
+            <h2>
+                MOVES
+            </h2>
+            <p>Assim como o nosso sistema locomotor é formado pela união de dois sistemas (muscular e esquelético) a movimentação de nossa robô é guiada por duas principais fontes:
+                <p>2 Motores CC </p>
+                <p>2 Rodas</p>
+                <p>Rodízio (auxiliar)</p>
+
+
+            </p>
+
+        </div>
+        <div class="pt4 hardware">
+            <h2>
+                Battle
+            </h2>
+
+            <p>
+                Tal como defenderia Sun Tzu, além da arma propriamente dita, é necessário estratégia. Para isso, precisamos do reconhecimento do ambiente e suprimentos, por exemplo. COMPONENTES:
+                <p>3 Sensores ópticos</p>
+                <p>Buzzer </p>
+                <p>Pilhas alcalinas recarregáveis</p>
+                <p>Suporte para pilhas</p>
+
+            </p>
+        </div>
+        <div class="pt4 hardware base">
+            <h2>
+                Tools
+            </h2>
+            <p>Um cirurgião necessita dos instrumentos certos para uma cirurgia. Nós, artistas, precisamos também do kit perfeito para produzir a obra de arte: a querida robô Eva! FERRAMENTAS PRINCIPAIS:
+                <p>Parafusos e porcas</p>
+                <p>Braçadeiras</p>
+                <p>Fita dupla face</p>
+                <p>Espaçadores</p>
+                <p>Alicates de corte</p>
+                <p>Impressora de corte 3D</p>
+            </p>
+
+        </div>
+        <div class="pt4 hardware">
+            <h2>
+                LUX
+            </h2>
+
+            <p>
+                Nossa robô conta com um sistema de iluminação para indicar quando está desligada. “Brilhe comigo, a luz me segue aonde quer que eu vá.” COMPONENTES:
+                <p>Resistores</p>
+                <p>Leds</p>
+
+
+
+            </p>
+        </div>
+    </div>
+    <!--Página 5 galeria-->
+    <div class="galeria" id="gallery">
+        <img src="css/assets/imagens/gallery-title.jpg" class="titulo-galeria">
+        <div class="row">
+            <div class="column">
+                <img src="./css/assets/imagens/robo1.png">
+                <img src="./css/assets/imagens/robo2.png">
+                <img src="./css/assets/imagens/robo8.jpg">
+            </div>
+            <div class="column">
+                <img src="./css/assets/imagens/robo3.png">
+                <img src="./css/assets/imagens/robo4.png">
+
+            </div>
+            <div class="column">
+                <img src="./css/assets/imagens/robo5.png">
+                <img src="./css/assets/imagens/robo6.png">
+                <img src="./css/assets/imagens/robo7.png">
+
+            </div>
+
+        </div>
+    </div>
+    <!--PÁGINA 6 minha equipe-->
+    <div class="nossa-equipe" id="team">
+        <img src="./css/assets/imagens/nossa equipe.png" class="equipe-title">
+
+        <!--Versão Desktop-->
+        <table class="membros desktop" style="width:100%">
+
+            <tr>
+                <td><img src="./css/assets/imagens/bibs.png"></td>
+                <td>
+                    <h1>Bianca Abbamonte</h1>
+                    <p>Designer e Head of Communication</p>
+                    <a href="https://www.linkedin.com/in/biancaabbamonte/" target="_blank">LinkedIn</a> |
+                    <a target="_blank">GitHub</a> |
+                    <a href="https://www.instagram.com/bianca_aveno/" target="_blank">Instagram</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./css/assets/imagens/isa.png"></td>
+                <td>
+                    <h1>Isabela Caovila</h1>
+                    <p>Head of Leadership e UX Writer</p>
+                    <a href="https://www.linkedin.com/in/isabela-caovila/" target="_blank">LinkedIn</a> |
+                    <a href="https://github.com/ContagiousMisfit" target="_blank">GitHub</a> |
+                    <a href="https://www.instagram.com/isacaovila/" target="_blank">Instagram</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./css/assets/imagens/jes.png"></td>
+                <td>
+                    <h1>Jéssica Waiyin</h1>
+                    <p> UX/UI Designer e Design Lead</p>
+                    <a href="https://www.linkedin.com/in/jessica-waiyin/" target="_blank">LinkedIn</a> |
+                    <a href="https://www.behance.net/jwaiyin" target="_blank">Behance</a> |
+                    <a href="https://dribbble.com/jwaiyin" target="_blank">Dribbble</a> |
+                    <a href="https://www.instagram.com/jwaiyin/" target="_blank">Instagram</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./css/assets/imagens/laris.png"></td>
+                <td>
+                    <h1>Larissa Evelyn</h1>
+                    <p>Desenvolvedora web</p>
+                    <a href="https://www.linkedin.com/in/larissa-evelyn/" target="_blank">LinkedIn</a> |
+                    <a target="_blank">GitHub</a> |
+                    <a href="https://www.instagram.com/larissaevelynfju/" target="_blank">Instagram</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./css/assets/imagens/may.png"></td>
+                <td>
+                    <h1>Mayra Caled</h1>
+                    <p>Head of Business Intelligence e dev web</p>
+                    <a href="https://www.linkedin.com/in/mayra-mahmoud/" target="_blank">LinkedIn</a> |
+                    <a target="_blank">GitHub</a> |
+                    <a href="https://www.instagram.com/mayracaled/" target="_blank">Instagram</a>
+                </td>
+            </tr>
+        </table>
+        <!--Versão Mobile-->
+        <ul class="membros mobile">
+            <li>
+                <img src="./css/assets/imagens/bibs.png">
+                <h1>Bianca Abbamonte</h1>
+                <p>Designer e Head of Communication</p>
+
+                <a href=" https://www.linkedin.com/in/biancaabbamonte/ " target="_blank ">LinkedIn</a> |
+                <a target="_blank ">GitHub</a> |
+                <a href="https://www.instagram.com/bianca_aveno/ " target="_blank ">Instagram</a>
+
+            </li>
+
+
+            <li>
+                <img src="./css/assets/imagens/isa.png">
+                <h1>Isabela Caovila</h1>
+                <p>Head of Leadership e UX Writer</p>
+
+                <a href="https://www.linkedin.com/in/isabela-caovila/ " target="_blank ">LinkedIn</a> |
+                <a href="https://github.com/ContagiousMisfit " target="_blank ">GitHub</a> |
+                <a href="https://www.instagram.com/isacaovila/ " target="_blank ">Instagram</a>
+
+            </li>
+
+
+            <li>
+                <img src="./css/assets/imagens/jes.png">
+                <h1>Jéssica Waiyin</h1>
+                <p> UX/UI Designer e Design Lead</p>
+
+                <a href="https://www.linkedin.com/in/jessica-waiyin/ " target="_blank ">LinkedIn</a> |
+                <a href="https://www.behance.net/jwaiyin " target="_blank ">Behance</a> |
+                <a href="https://dribbble.com/jwaiyin " target="_blank ">Dribbble</a> |
+                <a href="https://www.instagram.com/jwaiyin/ " target="_blank ">Instagram</a>
+
+            </li>
+
+
+            <li>
+                <img src="./css/assets/imagens/laris.png ">
+                <h1>Larissa Evelyn</h1>
+                <p>Desenvolvedora web</p>
+
+                <a href="https://www.linkedin.com/in/larissa-evelyn/ " target="_blank ">LinkedIn</a> |
+                <a target="_blank ">GitHub</a> |
+                <a href="https://www.instagram.com/larissaevelynfju/ " target="_blank ">Instagram</a>
+
+            </li>
+
+
+            <li>
+                <img src="./css/assets/imagens/may.png ">
+                <h1>Mayra Caled</h1>
+                <p>Head of Business Intelligence e dev web</p>
+
+                <a href="https://www.linkedin.com/in/mayra-mahmoud/ " target="_blank ">LinkedIn</a> |
+                <a target="_blank ">GitHub</a> |
+                <a href="https://www.instagram.com/mayracaled/ " target="_blank ">Instagram</a>
+            </li>
+
+        </ul>
+        <!--FIM PÁGINA 6 minha equipe-->
+
+    </div>
+
+    <!--Página 7 Formulário-->
+    <div class="pt7" id="contact">
+        <img src="./css/assets/imagens/contato.png" alt="" class="contato-img">
+        <form action="" method="GET">
+
+            <div class="name">
+                <label for="fname">Seu Nome</label>
+                <input type="text" name="nome" placeholder="Ex: Mayara Mahmoud">
+
+                <label for="e-mail">E-mail</label>
+                <input type="e-mail" name="email" placeholder="Ex: mayaraburguesa@gmail.com">
+
+                <label for="assunto">Assunto</label>
+                <input type="text" placeholder="Ex: Elogio ao site mais lindo do ano">
+
+                <textarea type="text" placeholder="Digite sua mensagem aqui" class="msg"></textarea>
+
+                <div class="wrapper"> <button class="botao">Enviar</button></div>
+
+
+            </div>
+        </form>
+    </div>
+
+    <!--Página 8 rodapé-->
+    <div class="pt8">
+
+        <footer class="rodape">
+            <img src="./css/assets/imagens/techwavesLogo.png" alt="Logitipo techwavess"><br>
+            <img src="./css/assets/imagens/logo_fiap.png" alt="Logitipo FIAP">
+        </footer>
+
+    </div>
+
+</body>

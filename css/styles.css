@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@500&family=Orbitron&family=Poppins:wght@500;600&display=swap');
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*Deixa o button do momento com cor diferente*/
+
+.active {
+    text-decoration: none;
+    color: #754FE1;
+}
+
+.disabled {
+    display: none;
+}
+
+ ::-moz-selection {
+    /* Code for Firefox */
+    color: #e4e4e4;
+    background: #754FE1;
+}
+
+ ::selection {
+    color: #e4e4e4;
+    background: #754FE1;
+}
+
+
+/*SCROLLBAR*/
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #424242 #B5B5B5;
+}
+
+body::-webkit-scrollbar-track {
+    background: #B5B5B5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #424242;
+    border-radius: 6px;
+    border: 3px solid #424242;
+}
+
+
+/*
+----------PÁGINA 1----------
+            HOME
+----------------------------    
+*/
+
+.home {
+    background-color: #1B1B1B;
+}
+
+.home #robo {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.menuHome {
+    height: 11vh;
+    width: 100%;
+    background: #1B1B1B;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 1000000;
+}
+
+.menuHome div {
+    float: right;
+    margin: 1% 1%;
+}
+
+.menuHome img {
+    max-width: 11%;
+    margin-left: 2%;
+}
+
+.menuHome a {
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 45px;
+    color: #4C5768;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menuHome a:hover {
+    color: #97a4b8;
+}
+
+.menuHome #contactNav {
+    color: #882759;
+}
+
+.menuHome #contactNav:hover {
+    color: #e7308f;
+}
+
+@media (min-device-width: 480px) {
+    .homeMobile {
+        display: none;
+    }
+}
+
+@media (max-device-width: 480px) {
+    #robo {
+        width: 100vw;
+        height: 130vh;
+        background-repeat: no-repeat;
+    }
+    .homeNormal {
+        display: none;
+    }
+    .home a {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+
+/*
+----------PÁGINA 2----------
+            SOBRE
+----------------------------    
+*/
+
+.sobre h2 {
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.04em;
+    line-height: 100%;
+    margin-bottom: 3%;
+    background: linear-gradient(132.95deg, #8DE6E5 4.31%, #75AFF2 49.13%, #6A8DFD 95.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sobre {
+    width: 100%;
+    font-size: 2.5vh;
+    font-family: 'Fira Code', monospace;
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sobre p {
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.sobre {
+    background-image: url("./assets/imagens/backgroundG.png");
+}
+
+@media (max-device-width: 480px) {
+    .sobre p {
+        font-size: 2.5vh;
+        padding-left: 25%;
+        padding-right: 25%;
+        max-width: 350px;
+    }
+}
+
+
+/*
+----------PÁGINA 3----------
+WEAPONS ISABELA
+----------------------------    
+*/
+
+.weapons {
+    background-image: url("./assets/imagens/background\ isa.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 100px;
+    height: 100vh;
+}
+
+
+/*Detalhezinho bonitinho*/
+
+.detalhe {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 12px;
+    background-color: #8F4FE1;
+    border-radius: 50px;
+}
+
+
+/*CAIXA DE TEXTO*/
+
+.container-txt {
+    padding: 40px;
+    margin: auto;
+    align-content: center;
+    max-width: 500px;
+    height: 500px;
+    background-color: #e9e9e9;
+    border-radius: 30px;
+    /*txt*/
+    font-family: 'Fira Code', monospace;
+    color: #2B3141;
+    transition: 0.5s;
+}
+
+.container-txt .menu button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    /*Tira todo o style pra deixar parecido com texto*/
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+}
+
+
+/*LINK*/
+
+.container-txt .menu a:not(.active) {
+    text-decoration: none;
+    color: #2B3141;
+}
+
+.bold {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*Animaçãozinha*/
+
+.threed:hover {
+    transition: 0.5s;
+    box-shadow: 10px 13px 0px 0px rgba(118, 79, 225, 1);
+    -moz-box-shadow: 10px 13px 0px 0px rgba(118, 79, 225, 1);
+    -webkit-box-shadow: 10px 13px 0px 0px rgba(118, 79, 225, 1);
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 700px) {
+    /*FONT-SIZING*/
+    .container-txt h1 {
+        font-size: 3rem;
+    }
+    .container-txt p :not(.menu) {
+        font-size: 2rem;
+    }
+    .container-txt .setinha {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
+
+
+/*TABLET*/
+
+@media (min-width: 480px) and (max-width: 700px) {
+    .weapons {
+        width: 100vw;
+    }
+}
+
+
+/*MOBILE*/
+
+@media (max-device-width: 480px) {
+    /*FONT-SIZING*/
+    .weapons {
+        display: flex;
+        justify-content: center;
+    }
+    .container-txt {
+        width: 200px;
+        height: 800px;
+    }
+    .container-txt .menu button {
+        font-size: 1rem;
+        font-weight: 800;
+        display: inline;
+        padding: 10px;
+    }
+    .container-txt .tabcontent {
+        margin-top: 30px;
+    }
+    .container-txt .setinha {
+        display: none;
+    }
+    .container-txt h1 {
+        padding-bottom: 12px;
+    }
+}
+
+
+/*
+----------PÁGINA-4---------
+HARDWARE
+----------------------------    
+*/
+
+.pt4 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2.5vh;
+}
+
+.base {
+    background-image: url('./assets/imagens/background-hardware.jpg');
+    min-height: 100vh;
+    width: 100%;
+}
+
+.pt4 h2 {
+    text-transform: uppercase;
+    font-family: Fira Code;
+    font-size: 5vh;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.04em;
+    line-height: 100%;
+    margin-bottom: 3%;
+    background: linear-gradient(132.95deg, #8DE6E5 4.31%, #75AFF2 49.13%, #6A8DFD 95.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pt4 p {
+    font-family: Fira Code;
+    padding-left: 400px;
+    padding-right: 400px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media (max-device-width: 480px) {
+    .componentes {
+        padding-top: 50%;
+    }
+    .pt4 p {
+        font-size: 2.5vh;
+        padding-left: 25%;
+        padding-right: 25%;
+        max-width: 350px;
+    }
+}
+
+
+/*
+----------PÁGINA-6---------
+GALERIA
+----------------------------    
+*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.galeria>img {
+    padding-bottom: 30px;
+}
+
+
+/* Create four equal columns that sits next to each other */
+
+.galeria .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.galeria .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.galeria img:not(.titulo-galeria) {
+    filter: grayscale(100%);
+    transition: 0.2s;
+}
+
+.galeria img:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/*
+----------PÁGINA 6----------
+        minha equipe
+----------------------------
+*/
+
+table {
+    display: none;
+}
+
+.nossa-equipe {
+    padding-bottom: 50px;
+}
+
+
+/*TITULO FICAR NO CENTRO*/
+
+.nossa-equipe .equipe-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 50px;
+}
+
+
+/*CENTRALIZAR A TABELA*/
+
+.membros {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.nossa-equipe .membros {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*ICONE PERFIL*/
+
+.nossa-equipe .membros img {
+    width: 180px;
+}
+
+
+/*TEXTO DA TABELA*/
+
+.nossa-equipe .membros p {
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    color: #C4C4C4;
+    font-weight: lighter;
+}
+
+.nossa-equipe .membros {
+    color: #ffffff;
+}
+
+.nossa-equipe .membros a {
+    font-size: 16px;
+    color: #C4C4C4;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nossa-equipe .membros a:hover {
+    color: #754FE1;
+    transition: 0.2s;
+}
+
+
+/*Padding do texto e imagem tabela*/
+
+.nossa-equipe .membros th,
+td {
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.nossa-equipe .membros img {
+    margin-right: 70px;
+}
+
+.nossa-equipe img:not(.equipe-title) {
+    filter: grayscale(100%);
+    transition: 0.2s;
+}
+
+.nossa-equipe .membros img:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+}
+
+
+/*COMPUTADOR*/
+
+@media (min-width: 700px) {
+    .nossa-equipe ul {
+        display: none;
+    }
+    .nossa-equipe table {
+        display: inline-block;
+    }
+}
+
+
+/*CELULAR*/
+
+@media (max-device-width: 480px) {
+    /*Faz a tabela se esconder caso seja celular*/
+    .nossa-equipe table {
+        display: none;
+    }
+    .nossa-equipe ul {
+        list-style: none;
+        max-width: 200px;
+        text-align: center;
+    }
+    .nossa-equipe .membros a {
+        font-size: 0.9rem;
+    }
+    .nossa-equipe .equipe-title {
+        margin-top: 150px;
+        width: 16rem;
+    }
+    .nossa-equipe .membros img {
+        width: 10rem;
+    }
+    .nossa-equipe h1 {
+        font-size: 1.6rem;
+    }
+    .nossa-equipe p {
+        font-size: 0.7rem;
+    }
+    .nossa-equipe .mobile li {
+        margin-bottom: 30px;
+    }
+}
+
+
+/*
+----------FIM 6----------
+    fim parte Isa
+----------------------------
+*/
+
+
+/*
+----------PÁGINA 7----------
+Formulário
+----------------------------    
+*/
+
+.pt7 {
+    width: 70%;
+    height: 100vh;
+    background: #F5F5F5;
+    border-radius: 0px 40px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.pt7 img {
+    max-width: 45%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.name {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #92A0AD;
+    border: none;
+    margin-left: 5%;
+}
+
+.name label {
+    margin-left: 10%;
+    font-size: 100%;
+}
+
+.name input::-webkit-input-placeholder {
+    color: #92A0AD;
+    font-style: bold;
+    font-family: Inter, sans-serif;
+    font-size: 120%;
+}
+
+.msg {
+    width: 80%;
+    height: 25vh;
+    font-family: Inter, sans-serif;
+    color: #000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 0px 40px;
+    margin: 2% 10%;
+    outline: inherit;
+    overflow-wrap: break-line;
+    font-size: 110%;
+    padding: 30px;
+}
+
+.msg::-moz-placeholder {
+    color: #b3bec9;
+}
+
+.pt7 input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: none;
+    outline: inherit;
+    width: 80%;
+    margin: 1.5% 10%;
+}
+
+.pt7 .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    height: 4vw;
+    background: radial-gradient(50% 50% at 50% 50%, #9919D6 0%, #8637AB 100%);
+    box-shadow: 2px 5px 21px rgba(135, 35, 214, 0.3);
+    border-radius: 40px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-width: 2px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 180%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.botao:hover {
+    background: radial-gradient(50% 50% at 50% 50%, #a636da 0%, #9c65b6 100%);
+}
+
+@media (max-device-width: 480px) {
+    .pt7 button {
+        height: 50px;
+        width: 200px;
+        font-size: 25px;
+    }
+    .pt7 textarea {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+
+/*
+----------PÁGINA 7----------
+Rodapé
+----------------------------    
+*/
+
+.rodape {
+    margin-top: 50px;
+    width: 2000px;
+    height: 55vh;
+    background: linear-gradient(30.3deg, #14171d -0.57%, #293040 74.28%);
+    box-shadow: 12px -17px 46px rgba(7, 8, 10, 0.5);
+    display: inline-block;
+    /* padding: 1% 0; */
+}
+
+.rodape img {
+    padding: 30px;
+}
